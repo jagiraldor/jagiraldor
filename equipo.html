@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1826'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%238ECAE6'%3EJG%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A1826">
+<title>Sobre mí | Jesus Giraldo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<script>if(localStorage.theme==='light')document.body.classList.add('light-mode')</script>
+
+<div class="floating-menu-container" id="mainNavContainer">
+  <nav class="floating-menu">
+    <a href="index.html" class="menu-brand" aria-label="Inicio"><span class="menu-brand-mono">JG</span></a>
+    <span class="menu-divider"></span>
+    <a href="index.html" class="menu-item" data-label="Inicio"><i class="fa-solid fa-house"></i></a>
+    <a href="equipo.html" class="menu-item active" data-label="Sobre mí"><i class="fa-solid fa-user"></i></a>
+    <a href="proyectos.html" class="menu-item" data-label="Proyectos"><i class="fa-solid fa-code"></i></a>
+    <button class="menu-item" id="themeToggle" data-label="Tema"><i class="fa-solid fa-circle-half-stroke"></i></button>
+  </nav>
+</div>
+
+<main class="page-content">
+  <div class="container">
+
+    <span class="eyebrow reveal">Sobre mí</span>
+    <h1 class="title-lg reveal" style="margin-bottom:10px">Jesus Giraldo</h1>
+    <p class="hero-role reveal" style="margin-bottom:8px">Desarrollador de software · Estudiante de Ingeniería de Software</p>
+    <p class="op-loc reveal">📍 Barranquilla, Colombia</p>
+    <p class="lede reveal" style="max-width:720px">Soy programador y me dedico al desarrollo de videojuegos y sistemas interactivos. Estudio Ingeniería de Software en la IUB y sigo aprendiendo para crear experiencias digitales cada vez más impactantes.</p>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Enfoque</span><span class="seg"></span></div>
+    <div class="reveal">
+      <p class="lede" style="max-width:720px">Desarrollo experiencias interactivas y soluciones digitales que combinan programación, diseño y una visión cercana a la ingeniería.</p>
+      <ul class="op-highlights">
+        <li>Interés por videojuegos, simuladores y prototipos funcionales</li>
+        <li>Enfoque técnico con estructura y claridad en cada proyecto</li>
+        <li>Combino formación académica con trabajo práctico y creativo</li>
+      </ul>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Formación</span><span class="seg"></span></div>
+    <div class="op-edu reveal">
+      <div class="op-edu-item"><span class="op-edu-year">2026 — En curso</span><strong class="op-edu-title">Ingeniería de Software</strong><span class="op-edu-place">IUB · Barranquilla</span></div>
+      <div class="op-edu-item"><span class="op-edu-year">Sep 2026 — Certificado</span><strong class="op-edu-title">AI Foundations · Curso de OpenAI</strong><span class="op-edu-place">OpenAI Academy</span></div>
+      <div class="op-edu-item"><span class="op-edu-year">2025 — Titulado</span><strong class="op-edu-title">Técnico en Telecomunicaciones</strong><span class="op-edu-place">SENA · Articulación con la media</span></div>
+      <div class="op-edu-item"><span class="op-edu-year">2025 — Graduado</span><strong class="op-edu-title">Bachiller Académico Técnico Industrial · Especialidad Informática</strong><span class="op-edu-place">INSTPECAM · Valledupar</span></div>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Habilidades</span><span class="seg"></span></div>
+    <div class="skills-wrap reveal">
+      <span class="skill">Unity</span><span class="skill">C#</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">HTML &amp; CSS</span><span class="skill">Blender</span><span class="skill">Modelado 3D</span><span class="skill">Redes</span>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Redes</span><span class="seg"></span></div>
+    <div class="op-social reveal">
+      <a href="https://www.instagram.com/jesusgiraldor/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @jesusgiraldor</a>
+      <a href="https://www.tiktok.com/@jesusandresgirald" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i> @jesusandresgirald</a>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Contacto</span><span class="seg"></span></div>
+    <div class="team-cta reveal">
+      <div class="team-cta-text">
+        <h2 class="title-md" style="margin-bottom:14px">¿Tienes un proyecto o una vacante? Hablemos.</h2>
+        <p class="lede">Escríbeme y te respondo lo antes posible.</p>
+      </div>
+      <a href="mailto:jagiraldor17@gmail.com" class="btn btn-solid"><i class="fa-solid fa-envelope"></i> Escribirme</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p><strong>Jesus Giraldo</strong> — Barranquilla, Colombia</p>
+  <p>© 2026 Jesus Giraldo · Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

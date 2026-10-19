@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1826'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%238ECAE6'%3EJG%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A1826">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jesus Giraldo — Desarrollador de Software">
+<meta property="og:description" content="Videojuegos, simuladores 3D y herramientas web. Estudiante de Ingeniería de Software en Barranquilla.">
+<title>Jesus Giraldo — Desarrollador de Software</title>
+<meta name="description" content="Jesus Giraldo, estudiante de Ingeniería de Software y desarrollador de videojuegos, simuladores 3D y herramientas web. Barranquilla, Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<script>if(localStorage.theme==='light')document.body.classList.add('light-mode')</script>
+
+<div class="floating-menu-container minimized" id="mainNavContainer">
+  <nav class="floating-menu">
+    <a href="index.html" class="menu-brand" aria-label="Inicio"><span class="menu-brand-mono">JG</span></a>
+    <span class="menu-divider"></span>
+    <a href="index.html" class="menu-item active" data-label="Inicio"><i class="fa-solid fa-house"></i></a>
+    <a href="equipo.html" class="menu-item" data-label="Sobre mí"><i class="fa-solid fa-user"></i></a>
+    <a href="proyectos.html" class="menu-item" data-label="Proyectos"><i class="fa-solid fa-code"></i></a>
+    <button class="menu-item" id="themeToggle" data-label="Tema"><i class="fa-solid fa-circle-half-stroke"></i></button>
+  </nav>
+</div>
+
+<div class="intro-screen" id="introScreen">
+  <img src="LogoBanerF.png" alt="" class="intro-background-img" id="introBg" fetchpriority="high" decoding="async">
+  <div class="intro-title">
+    <span class="intro-eyebrow rise" style="--d:.1s">Ingeniería de Software · Barranquilla</span>
+    <h1 class="hero-name rise" style="--d:.25s">Jesus Giraldo</h1>
+    <p class="hero-role rise" style="--d:.4s">Desarrollador de software · Videojuegos y experiencias digitales</p>
+    <p class="hero-pitch rise" style="--d:.55s">Construyo videojuegos, simuladores 3D y herramientas web con estructura clara y atención al detalle. Busco oportunidades donde pueda aportar código y seguir aprendiendo.</p>
+    <div class="hero-actions rise" style="--d:.7s">
+      <a href="mailto:jagiraldor17@gmail.com" class="btn btn-solid"><i class="fa-solid fa-envelope"></i> Contactar</a>
+      <a href="proyectos.html" class="btn">Ver proyectos <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="equipo.html" class="btn btn-ghost">Sobre mí</a>
+    </div>
+  </div>
+  <div class="scroll-indicator" id="scrollIndicator" aria-hidden="true">
+    <svg class="scroll-arrow arrow-1" viewBox="0 0 24 24"><path d="M3 8l9 9 9-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    <svg class="scroll-arrow arrow-2" viewBox="0 0 24 24"><path d="M3 8l9 9 9-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    <svg class="scroll-arrow arrow-3" viewBox="0 0 24 24"><path d="M3 8l9 9 9-9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+  </div>
+</div>
+
+<main style="padding-top:100vh">
+  <div class="sticky-line"></div>
+  <div class="container" style="padding-top:60px">
+
+    <div class="spec-sheet reveal">
+      <div class="spec-cell"><span class="spec-num">IUB</span><span class="spec-lbl">Ing. de Software</span></div>
+      <div class="spec-cell"><span class="spec-num">01</span><span class="spec-lbl">Proyecto en vivo</span></div>
+      <div class="spec-cell"><span class="spec-num">SENA</span><span class="spec-lbl">Téc. Telecomunicaciones</span></div>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Sobre mí</span><span class="seg"></span></div>
+
+    <div class="panel-grid reveal">
+      <div class="panel-cell">
+        <span class="eyebrow">Perfil</span>
+        <p>Soy estudiante de <strong>Ingeniería de Software</strong> en Barranquilla. Trato cada proyecto con el rigor de un plano de ingeniería: primero una estructura clara, después el producto terminado.</p>
+      </div>
+      <div class="panel-cell">
+        <span class="eyebrow">Qué hago</span>
+        <ul class="service-list">
+          <li>Desarrollo web a medida para clientes</li>
+          <li>Videojuegos y simuladores 3D con Unity y Blender</li>
+          <li>Extensiones de navegador y herramientas digitales</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Habilidades</span><span class="seg"></span></div>
+
+    <div class="skills-wrap reveal">
+      <span class="skill">Unity</span><span class="skill">C#</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">HTML &amp; CSS</span><span class="skill">Blender</span><span class="skill">Modelado 3D</span><span class="skill">Redes</span>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Proyecto destacado</span><span class="seg"></span></div>
+
+    <a href="instpecam/" class="proj-card proj-card-img reveal" style="--bg-image:url('instpecamIMG1.jpg')">
+      <div class="proj-card-body">
+        <span class="status-tag status-live"><span class="dot"></span> En vivo</span>
+        <span class="proj-tag">Proyecto de grado · 2025</span>
+        <h3>INSTPECAM 3D</h3>
+        <p>Simulador inmersivo y navegable del Instituto Técnico Industrial Pedro Castro Monsalvo, modelado en Blender y SketchUp y ensamblado en Unity.</p>
+        <span class="proj-cta"><i class="fa-solid fa-arrow-right"></i> Ver proyecto</span>
+      </div>
+    </a>
+
+    <div style="text-align:center;margin:40px 0 0" class="reveal">
+      <a href="proyectos.html" class="btn btn-ghost">Explorar todos los proyectos <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="dim-line reveal"><span class="seg"></span><span class="lbl">Contacto</span><span class="seg"></span></div>
+
+    <div class="team-cta reveal">
+      <div class="team-cta-text">
+        <h2 class="title-md" style="margin-bottom:14px">¿Tienes un proyecto o una vacante? Hablemos.</h2>
+        <p class="lede">Escríbeme y te respondo lo antes posible.</p>
+      </div>
+      <a href="mailto:jagiraldor17@gmail.com" class="btn btn-solid"><i class="fa-solid fa-envelope"></i> Escribirme</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p><strong>Jesus Giraldo</strong> — Barranquilla, Colombia</p>
+  <p>© 2026 Jesus Giraldo · Todos los derechos reservados</p>
+  <p>Email: <a href="mailto:jagiraldor17@gmail.com">jagiraldor17@gmail.com</a></p>
+</footer>
+</body>
+</html>

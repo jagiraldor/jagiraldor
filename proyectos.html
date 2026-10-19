@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1826'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%238ECAE6'%3EJG%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A1826">
+<title>Proyectos | Jesus Giraldo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<script>if(localStorage.theme==='light')document.body.classList.add('light-mode')</script>
+
+<div class="floating-menu-container" id="mainNavContainer">
+  <nav class="floating-menu">
+    <a href="index.html" class="menu-brand" aria-label="Inicio"><span class="menu-brand-mono">JG</span></a>
+    <span class="menu-divider"></span>
+    <a href="index.html" class="menu-item" data-label="Inicio"><i class="fa-solid fa-house"></i></a>
+    <a href="equipo.html" class="menu-item" data-label="Sobre mí"><i class="fa-solid fa-user"></i></a>
+    <a href="proyectos.html" class="menu-item active" data-label="Proyectos"><i class="fa-solid fa-code"></i></a>
+    <button class="menu-item" id="themeToggle" data-label="Tema"><i class="fa-solid fa-circle-half-stroke"></i></button>
+  </nav>
+</div>
+
+<main class="page-content">
+  <div class="container">
+
+    <span class="eyebrow reveal">Mi trabajo</span>
+    <h1 class="title-lg reveal" style="margin-bottom:16px">Proyectos</h1>
+    <p class="lede reveal" style="margin-bottom:52px">Un registro honesto de lo que he construido y lo que está en mesa de dibujo. Prefiero mostrar poco y terminado, antes que mucho a medias.</p>
+
+    <div class="projects-grid">
+      <a href="instpecam/" class="proj-card proj-card-img reveal" style="--bg-image:url('instpecamIMG1.jpg');min-height:440px">
+        <div class="proj-card-body">
+          <span class="status-tag status-live"><span class="dot"></span> En vivo</span>
+          <span class="proj-tag">Simulador 3D · Proyecto de grado · 2025</span>
+          <h3>INSTPECAM 3D</h3>
+          <p>Simulador inmersivo del Instituto Técnico Industrial Pedro Castro Monsalvo, construido con Blender, SketchUp y Unity. Una réplica digital fiel y navegable del campus.</p>
+          <div class="proj-tech"><span>Unity</span><span>Blender</span><span>SketchUp</span><span>C#</span></div>
+          <span class="proj-cta"><i class="fa-solid fa-arrow-right"></i> Ver proyecto</span>
+        </div>
+      </a>
+
+      <div class="proj-card compact reveal">
+        <div>
+          <span class="status-tag status-dev"><span class="dot"></span> En desarrollo</span>
+          <h3>Próximo proyecto</h3>
+          <p>Estoy trabajando en una nueva experiencia interactiva. Compartiré los detalles cuando tenga forma.</p>
+        </div>
+        <span class="proj-cta" style="color:var(--muted)"><i class="fa-solid fa-clock"></i> Por anunciar · 2026</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p><strong>Jesus Giraldo</strong> — Barranquilla, Colombia</p>
+  <p>© 2026 Jesus Giraldo · Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
