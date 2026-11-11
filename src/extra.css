@@ -1,0 +1,7 @@
+.reveal{opacity:1;transform:none}
+.menu-item{font-family:inherit}
+.menu-item.active{color:var(--sky)}
+.link-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.link-row a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line-2);border-radius:4px;text-decoration:none;color:var(--dim);font:.72rem var(--font-mono);letter-spacing:.08em;transition:color var(--ease),border-color var(--ease),transform var(--ease)}
+.link-row a:hover{color:var(--sky);border-color:var(--sky);transform:translateY(-2px)}
+.skill{cursor:default}
